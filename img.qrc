@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/pnglogo">
+        <file>zodiaclogo.png</file>
+        <file>zod.jpg</file>
+        <file>table1.png</file>
+    </qresource>
+</RCC>
