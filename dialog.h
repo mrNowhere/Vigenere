@@ -15,6 +15,7 @@
 #include <QValidator>
 #include <QScriptEngine>
 #include <QPalette>
+#include <QVector>
 //#include <QToolTip>
 #include <QDebug>
 
@@ -32,18 +33,19 @@ public:
     ~Dialog();
 private slots:
     void encrypt();
-    void time_update();
     void on_ExitButton_clicked();
     void on_SaveButton_clicked();
     void on_DecryptButton_clicked();
     void regexp();
     void isClicked();
     void set_key();
+    void clearText();
 private:
     QTimer* timer;
     QScriptEngine engine;
     Ui::Dialog *ui;
-    QColor clr;
+    QString textInput;
+
 };
 
 #endif // DIALOG_H
